@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4673079032334523707}
   - component: {fileID: 4673079032334523706}
-  - component: {fileID: 4673079032334523709}
   - component: {fileID: 7378397492117214182}
+  - component: {fileID: 4673079032334523709}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -29,7 +29,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 895740290371823573}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -85,24 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4673079032334523709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4673079032334523708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c159e4c1c17b87d469e7d3a4bce86617, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementBounds:
-    min: 0
-    max: 1
-  startingRange:
-    min: -2.1
-    max: 2.1
 --- !u!61 &7378397492117214182
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -129,3 +112,54 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.42, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &4673079032334523709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4673079032334523708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c159e4c1c17b87d469e7d3a4bce86617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementBounds:
+    min: 0
+    max: 1
+  startingRange:
+    min: -2.1
+    max: 2.1
+  bulletSpawn: {fileID: 0}
+  bulletPrefab: {fileID: 0}
+  frameDelay: 0
+--- !u!1 &4876671394972319573
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 895740290371823573}
+  m_Layer: 0
+  m_Name: ButtetSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &895740290371823573
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4876671394972319573}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.45, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4673079032334523707}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
