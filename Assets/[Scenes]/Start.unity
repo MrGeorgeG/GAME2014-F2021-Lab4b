@@ -172,7 +172,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 239771034}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59bc1ef0d0e4b774aa80765639ada457, type: 3}
+  m_Script: {fileID: 11500000, guid: 95e73bfd358ef284db33768d51263baa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &239771037
@@ -220,8 +220,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 239771036}
-        m_TargetAssemblyTypeName: StartButtonBehaviour, Assembly-CSharp
-        m_MethodName: OnStartButtonPressed
+        m_TargetAssemblyTypeName: UIBehaviour, Assembly-CSharp
+        m_MethodName: OnNextButtonPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
