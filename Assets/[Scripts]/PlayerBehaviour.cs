@@ -16,13 +16,13 @@ public class PlayerBehaviour : MonoBehaviour
     public int frameDelay;
     
     private Rigidbody2D rigidbody;
-    private BulletManager bulletManager;
+    //private BulletManager bulletManager;
 
     // Start is called before the first frame update
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
-        bulletManager = GameObject.FindObjectOfType<BulletManager>();
+        //bulletManager = GameObject.FindObjectOfType<BulletManager>();
     }
 
     // Update is called once per frame
@@ -61,7 +61,7 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if ((Time.frameCount % frameDelay == 0) && (Input.GetAxisRaw("Jump") > 0))
         {
-            bulletManager.GetBullet(bulletSpawn.position, BulletType.PLAYER);
+            BulletManager.Instance().GetBullet(bulletSpawn.position, BulletType.PLAYER);
         }
     }
 }
