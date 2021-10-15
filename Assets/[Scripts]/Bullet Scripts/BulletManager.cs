@@ -31,21 +31,16 @@ public class BulletManager
     public int enemyBulletNumber;
     public int playerBulletNumber;
 
-
-    private BulletFactory factory;
-
     // Start is called before the first frame update
     private void Initialize()
     {
         enemyBulletPool = new Queue<GameObject>();//Creates an empty Enemy Bullet Queue
         playerBulletPool = new Queue<GameObject>();//Creates an empty Player Bullet Queue
-
-        factory = GameObject.FindObjectOfType<BulletFactory>();
     }
 
     private void AddBullet(BulletType type = BulletType.ENEMY)
     {
-        var temp_bullet = factory.createBullet(type);
+        var temp_bullet = BulletFactory.Instance().createBullet(type);
 
         switch(type)
         {

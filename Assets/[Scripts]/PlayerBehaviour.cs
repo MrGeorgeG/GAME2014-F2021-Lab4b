@@ -16,13 +16,11 @@ public class PlayerBehaviour : MonoBehaviour
     public int frameDelay;
     
     private Rigidbody2D rigidbody;
-    //private BulletManager bulletManager;
 
     // Start is called before the first frame update
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
-        //bulletManager = GameObject.FindObjectOfType<BulletManager>();
     }
 
     // Update is called once per frame
