@@ -409,6 +409,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5953812265433797229, guid: ce6be5af5dd4e72479158280b32b04cc, type: 3}
+      propertyPath: decay
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5953812265433797229, guid: ce6be5af5dd4e72479158280b32b04cc, type: 3}
+      propertyPath: bounds.max
+      value: 1.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5953812265433797229, guid: ce6be5af5dd4e72479158280b32b04cc, type: 3}
+      propertyPath: bounds.min
+      value: -1.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5953812265433797229, guid: ce6be5af5dd4e72479158280b32b04cc, type: 3}
+      propertyPath: horizontalForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 7794112426940741261, guid: ce6be5af5dd4e72479158280b32b04cc, type: 3}
       propertyPath: m_Name
       value: Player
@@ -457,5 +473,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9212928929974733666, guid: ce6be5af5dd4e72479158280b32b04cc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ce6be5af5dd4e72479158280b32b04cc, type: 3}

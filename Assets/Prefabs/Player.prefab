@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 7794112426940741263}
   - component: {fileID: 7794112426940741260}
   - component: {fileID: 2345053988175294118}
-  - component: {fileID: 7794112426940741265}
+  - component: {fileID: 5953812265433797229}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -181,7 +181,7 @@ PolygonCollider2D:
       - {x: 0.43702325, y: -0.07739568}
       - {x: 0.056227878, y: 0.2034998}
       - {x: 0.02344168, y: 0.27702335}
---- !u!114 &7794112426940741265
+--- !u!114 &5953812265433797229
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -190,13 +190,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 7794112426940741261}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4c597646156f2d4a8ee841140628b5b, type: 3}
+  m_Script: {fileID: 11500000, guid: 7c1df377e538e6b47a2409deb4ae7e0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalForce: 40
-  decay: 0.1
+  horizontalForce: 0
+  decay: 0
   bounds:
-    min: -1.9
-    max: 1.9
+    min: 0
+    max: 0
   bulletSpawn: {fileID: 3111778385442819311}
   frameDelay: 5

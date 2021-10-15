@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerBehaviour : MonoBehaviour
 {
     [Header("Player Movement")]
-    [Range(0.0f, 100.0f)]
+    [Range(0.0f, 200.0f)]
     public float horizontalForce;
     [Range(0.0f, 1.0f)]
     public float decay;
@@ -14,7 +14,7 @@ public class PlayerBehaviour : MonoBehaviour
     [Header("Player Attack")]
     public Transform bulletSpawn;
     public int frameDelay;
-    
+
     private Rigidbody2D rigidbody;
 
     // Start is called before the first frame update
@@ -43,7 +43,7 @@ public class PlayerBehaviour : MonoBehaviour
     private void CheckBounds()
     {
         //Left Boundary
-        if(transform.position.x < bounds.min)
+        if (transform.position.x < bounds.min)
         {
             transform.position = new Vector2(bounds.min, transform.position.y);
         }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletBehaviour : MonoBehaviour
+public abstract class BulletBehaviour : MonoBehaviour
 {
     public BulletType type;
 
@@ -22,7 +22,7 @@ public class BulletBehaviour : MonoBehaviour
         transform.position += bulletVelocity;
     }
 
-    private void CheckBounds()
+    protected virtual void CheckBounds()
     {
         //check bottom bounds
         if(transform.position.y < bulletBounds.max)

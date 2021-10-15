@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8382410647766047486}
   - component: {fileID: 8382410647766047487}
   - component: {fileID: 6119146023606474649}
-  - component: {fileID: 8382410647766047484}
+  - component: {fileID: 359462796485497255}
   m_Layer: 0
   m_Name: EnemyBullet
   m_TagString: Untagged
@@ -111,7 +111,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.12, y: 0.32}
   m_EdgeRadius: 0
---- !u!114 &8382410647766047484
+--- !u!114 &359462796485497255
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,11 +120,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8382410647766047485}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbb193b0af56ecb4cb95d011ed5540de, type: 3}
+  m_Script: {fileID: 11500000, guid: 9a56876f7660e3d4882734783d178b8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  bulletVelocity: {x: 0, y: -0.1, z: 0}
+  bulletVelocity: {x: 0, y: 0, z: 0}
   bulletBounds:
     min: 5.5
     max: -5.5
